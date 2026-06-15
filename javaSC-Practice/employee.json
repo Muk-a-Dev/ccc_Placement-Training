@@ -1,0 +1,37 @@
+[
+  {
+    "empId": 101,
+    "name": "Dinesh Kumar",
+    "department": "IT",
+    "salary": 65000,
+    "city": "Chennai"
+  },
+  {
+    "empId": 102,
+    "name": "Priya Sharma",
+    "department": "HR",
+    "salary": 75000,
+    "city": "Mumbai"
+  },
+  {
+    "empId": 103,
+    "name": "Rahul Verma",
+    "department": "Finance",
+    "salary": 55000,
+    "city": "Bangalore"
+  },
+  {
+    "empId": 104,
+    "name": "Sneha Reddy",
+    "department": "IT",
+    "salary": 70000,
+    "city": "Hyderabad"
+  },
+  {
+    "empId": 105,
+    "name": "Arjun Patel",
+    "department": "Marketing",
+    "salary": 90000,
+    "city": "Pune"
+  }
+]
