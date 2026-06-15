@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student Manager</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="app-shell">
+			<h1>Student Manager</h1>
+			<p class="intro">A simple student record app made with HTML, CSS, and JavaScript.</p>
+			<p class="count">Total Students: <span id="studentCount">0</span></p>
+
+			<section class="panel">
+				<form id="studentForm" autocomplete="off">
+					<input type="hidden" id="studentIndex" />
+
+					<label for="name">Student Name</label>
+					<input id="name" type="text" placeholder="Enter student name" required />
+
+					<label for="rollNo">Roll No</label>
+					<input id="rollNo" type="text" placeholder="Enter roll number" required />
+
+					<label for="course">Course</label>
+					<input id="course" type="text" placeholder="Enter course" required />
+
+					<label for="email">Email</label>
+					<input id="email" type="email" placeholder="Enter email" required />
+
+					<div class="buttons">
+						<button type="submit">Save</button>
+						<button type="button" id="clearBtn">Clear</button>
+					</div>
+				</form>
+
+				<input id="searchInput" class="search" type="text" placeholder="Search student" />
+
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Roll No</th>
+							<th>Course</th>
+							<th>Email</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="studentList"></tbody>
+				</table>
+
+				<p id="emptyState" class="empty-state">No student data available.</p>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
