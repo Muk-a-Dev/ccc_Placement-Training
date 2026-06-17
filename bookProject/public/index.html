@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <p class="eyebrow">Book catalog</p>
+        <h1>Library Management</h1>
+    </header>
+
+    <div class="card toolbar">
+
+        <div class="form-grid">
+            <input type="text" id="searchTitle" placeholder="Search Books">
+
+            <button class="search-btn" onclick="searchBook()">
+                Search
+            </button>
+
+            <button class="show-btn" onclick="loadBooks()">
+                Show All
+            </button>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2 class="card-title">Add or update book</h2>
+
+        <div class="form-grid">
+            <input id="title" placeholder="Book Title">
+            <input id="author" placeholder="Author">
+            <input id="category" placeholder="Category">
+            <input id="price" placeholder="Price">
+            <input id="quantity" placeholder="Quantity">
+            <input type="hidden" id="bookId">
+
+            <button class="add-btn" onclick="addBook()">
+                Add Book
+            </button>
+            <button class="secondary-btn" onclick="clearForm()" type="button">
+                Reset
+            </button>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
